@@ -21,8 +21,7 @@ Vagrant.configure("2") do |config|
  #=============#
  # Added Nodes #
  #=============#
- 
- (1..3).each do |i|
+  (1..3).each do |i|
   config.vm.define "w#{i}-k8s" do |cfg|
    cfg.vm.box = "sysnet4admin/CentOS-k8s"
    cfg.vm.provider "virtualbox" do |vb|
